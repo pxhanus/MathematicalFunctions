@@ -20,7 +20,7 @@
 
         If IsNumeric(numString) And Val(numString) >= 0 Then
             num = numString
-            Me.lblAns.Text = "The square root of " & num & " is " & Math.Sqrt(num)
+            Me.lblAns.Text = "The square root of " & num & " is " & Math.Round(Math.Sqrt(num), 2)
         Else
             MessageBox.Show("Please enter a number greater than or equal to zero.")
             Me.txtNum.Text = Nothing
